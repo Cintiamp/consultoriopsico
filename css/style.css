@@ -1,0 +1,238 @@
+/*
+Primero vamos a incluir "Normalize" que es un fichero CSS cuya función principal es configurar nuestra página para que se pueda ver igual independientemente del navegador que utilice el usuario. Es decir, mantiene los estilos similares en los navegadores.
+Copie el código desde la página oficial, lo guarde en el archivo normalize.css y luego lo vincule con mi html, antes de mi otro link de vinculación de estilos (para que cargue primero este documento estandarizador de estilos).
+*/
+
+/*
+1° Voy a establecer algunos estilos a etiquetas específicas que quiero que se apliquen en toda mi página web
+2° Voy a dividir con comentarios los estilos de mi html por etiquetas semánticas
+3° Luego voy a ir dando estilos desde lo general a lo particular y ayudandome con clases y id
+*/
+
+/* Estilos generales*/
+/* Utilice estilos de fuentes similares a las propuestas en el kit de estilos por no encontrar las mismas */
+
+h1 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+h3 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.5;
+}
+
+section {
+    padding: 10px 30px 20px 50px;
+    border-bottom: solid 0.1px #737373;
+}
+
+/*                                                               HEADER                                                             */
+
+header {
+    background: rgb(232, 228, 228);
+    background: linear-gradient(90deg, rgba(180, 143, 255, 1) 0%, rgba(232, 228, 228, 1) 100%);
+    /* Me ayude con la página web https://cssgradient.io */
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+header .header_logo {
+    height: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    height: 100px;
+    align-items: center;
+    width: 85%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 1.5em;
+}
+
+nav ul li {
+    width: 200px;
+}
+
+nav a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    color: #737373;
+    text-decoration: underline;
+}
+
+.header_iconos {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*                                                 SECCIÓN BANNER                                                */
+
+._banner_img {
+    text-align: center;
+}
+
+/*                                               SECCIÓN ACERCA DE MÍ                                          */
+
+._acercademi_img_personal {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+._acercademi_img_personal span {
+    padding-top: 20px;
+    text-align: left;
+}
+
+._acercademi_img_personal img {
+    padding-right: 150px;
+    padding-left: 100px;
+    border-radius: 30%;
+    width: 500px;
+    text-align: start;
+}
+
+/*                                                       SECCIÓN PREGUNTAS FRECUENTES                                   */
+._preguntasfrecuentes {
+    height: 800px;
+    padding: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+}
+
+._preguntasfrecuentes_contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+._preguntasfrecuentes_contenedor article {
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    margin: 5px;
+    padding-bottom: 30px;
+}
+
+/*                                                             SECCIÓN MOTIVOS CONSULTA                                 */
+.motivosconsulta_contenedor div {
+    width: 400px;
+    height: 250px;
+    text-align: center;
+
+}
+
+.motivosconsulta_contenedor {
+    width: 1200px;
+    height: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: stretch;
+    padding-bottom: 50px;
+}
+
+/*                                                          SECCIÓN CONTACTO                                                            */
+
+.contacto_form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 300px;
+    margin-left: 100px;
+}
+
+.contacto_form ul li {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: larger;
+    list-style-type: none;
+    margin: 2px;
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.contacto_form li input {
+    height: 20px;
+    border-radius: 10%;
+    text-align: auto;
+}
+
+.contacto_form li textarea {
+    border: 2px solid black;
+    margin: 0;
+    background: none;
+    border-radius: 10%;
+}
+
+.contacto_form button{
+    border: solid 3px pink;
+    border-radius: 20%;
+    font-weight: bold;
+    margin-left: 410px;
+}
+
+.contacto_form li label {
+    width: 400px;
+    text-align: right;
+}
+
+#cbox1 {
+    margin-right: 200px;
+    border: solid 5px black;
+}
+
+/*                                 UBICACIÓN                             */
+.ubicacion_iframe {
+    width: 100%;
+}
+#ubicacion {
+    margin: 0;
+    padding: 0;
+}
+
+/*                                       FOOTER                                */
+.footer {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    margin: 10px;
+    padding: 30px;
+}
+.footer div {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    align-content: stretch;
+}
+.footer p {
+    margin-left: 10px;
+}

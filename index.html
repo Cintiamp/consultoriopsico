@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--Ponemos la página en idioma español. Esto va a ser útil para el caso de que el usuario utilice un sintetizador de voz y para favorecer el posicionamiento de la página en los buscadores-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>🧠 Dra. Andrea Morales - Psicologa</title>
+    <link rel="stylesheet" href="./css/normalize.css"> <!--vinculo normalize-->
+    <link rel="shortcut icon" href="./assets/img/logo-ico.ico" type="image/x-icon"> <!--vinculo hoja de estilos-->
+    <!-- Primero nos ocupamos del "head":
+    Le ponemos un título a la página para identificar la página en la "solapa" del navegador 
+    Linkeamos o "conectamos" nuestro html con la hoja de estilos
+    Agregamos un favicon por los mismos motivos que le ponemos un título y personalizar nuestra página web
+    En este caso también agregué un emoticon ya que mi favicon no resalta mucho-->
+    <!---Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Ahora vamos a darle el formato que deseamos, teniendo como referencia nuestro mokeup-->
+
+    <!--------Header----------------->
+    <!--En esta parte vamos a colocar la información que va aparecer primero y en la cabecera de nuestra página web
+        En este caso va a simular un índice para ir a las diferentes partes de nuestra web
+        Acá vamos a colocar nuestro logo y la barra de navegación-->
+    <header>
+        <a href="index.html"><img class="header_logo" src="./assets/img/logo.png" alt="Dibujo logo"></a>
+        <nav>
+            <!--Cada enlace va ir a una sección de la página. Estos enlaces se llaman internos y se coloca un numeral con un nombre de identificación en el "href" de la etiqueta y un id con el mismo nombre, sin numeral, para indicar la parte a la que queremos que nos dirija-->
+            <ul>
+                <li><a href="#acercademi">Acerca de mí</li></a>
+                <li><a href="#preguntasfrecuentes">Preguntas frecuentes</li></a>
+                <li><a href="#motivosconsulta">Algunos motivos de consulta</li></a>
+                <li><a href="#contacto">Contacto</li></a>
+            </ul>
+            <div class="header_iconos">
+                <a href="#ubicacion"><img src="./assets/img/ubicacion.png" width="50px" alt="Ícono ubicación"></a>
+                <a href="#mensajes"><img src="./assets/img/mensajes.png" width="50px" alt="Ícono mensajes"></a>
+                <a href="#telefono"><img src="./assets/img/telefono.png" width="50px" alt="Ícono Teléfono"></a>
+                <a href="#whatsapp"><img src="./assets/img/whatsapp.png" width="50px" alt="Ícono Whatsapp"></a>
+            </div>
+        </nav>
+    </header>
+    <!-----MAIN-------->
+    <!---Va a ser el cuerpo de nuestra página y donde vamos a colocar todas las secciones que mencionamos en nuestra barra de navegación-->
+    <main>
+        <section class="_banner">
+            <!--Banner publicitario-->
+            <div class="_banner_img">
+                <img src="./assets/img/logo-texto.png" alt="Benner Doctora Andrea Morales">
+            </div>
+        </section>
+        <section id="acercademi" class="_acercademi">
+            <!---En esta primera parte vamos hubo un cambio con respecto al mockup dado que la imagen de la página web es proporcionalmente más grande que el tamaño del texto.
+            Usamos la etiqueta span para poder panipular esos párrafos en particular-->
+            <h1>Acerca de mí</h1>
+            <div class="_acercademi_img_personal">
+                <img src="./assets/img/andrea-morales.jpg" alt="Doctora Andrea Morales">
+                <span>
+                    <p>
+                        Lic. Andrea Morales – Licenciada en Psicología, M.N. 62.753
+                        Graduada en la Universidad de Buenos Aires (UBA).
+                        Psicoanalista.
+                        Se doctoró con una tesis sobre la violencia, la revictimización y la culpa postraumática en
+                        2016.
+                    </p>
+                    <p>
+                        Ha realizado estudios de postgrado sobre clínica de adultos en Centro Dos y en la Escuela del
+                        Psicoanálisis del Hospital J.T. Borda. Concurrió también a la Red de Enseñanza y Transmisión de
+                        la
+                        Escuela Freudiana de Buenos Aires (EFBA).
+                        Actualmente se desempeña como psicóloga clínica en AIFAN Salud mental; en Øtro Cauce
+                        Psicoanálisis y
+                        en
+                        su consultorio particular.
+                    </p>
+                </span>
+
+            </div>
+
+        </section>
+        <!----Sección de preguntas frecuentes-->
+        <section id="preguntasfrecuentes" class="_preguntasfrecuentes">
+            <!---Esta parte contiene diferentes bloques iguales compuestos por un logo, subtítulo y párrafo
+            Voy a utilizar la atiqueta <article> para separar cada bloque porque son contenidos relacionados a la temática de la sección-->
+            <h1>Preguntas frecuentes</h1>
+            <div class="_preguntasfrecuentes_contenedor">
+                <article>
+                    <img src="./assets/img/signo-pregunta.png" width="100px" alt="Signo de pregunta">
+                    <h3>¿Cuanto cuestan las sesiones?</h3>
+                    <p>
+                        El costo de las sesiones se acuerda en el inicio.
+                    </p>
+                </article>
+                <article>
+                    <img src="./assets/img/signo-pregunta.png" width="100px" alt="Signo de pregunta">
+                    <h3>¿Cuándo consultar?</h3>
+                    <p>
+                        Existen sucesos sorpresivos o crisis vitales que irrumpen en nuestra vida, desbaratándola y
+                        causando
+                        sufrimiento. Otras veces, aparecen diversas formas de malestar sin un motivo aparente. Puede
+                        también, que haya situaciones que provocan un enorme sufrimiento psíquico, vivencias que
+                        conocemos
+                        muy bien pero ya no queremos seguir tolerando. La consulta con un terapeuta puede estar causado
+                        por
+                        esos motivos, o bien, por el solo hecho de querer hablar con un profesional especializado sobre
+                        cuestiones que dificultan la vida cotidiana.
+                    </p>
+                </article>
+                <article>
+                    <img src="./assets/img/signo-pregunta.png" width="100px" alt="Signo de pregunta">
+                    <h3>¿Atiende por Obra Social?</h3>
+                    <p>
+                        Obras sociales: Realizo consultas por reintegro.
+                    </p>
+                </article>
+                <article>
+                    <img src="./assets/img/signo-pregunta.png" width="100px" alt="Signo de pregunta">
+                    <h3>¿En qué se especializa?</h3>
+                    <p>
+                        Me especializo en la atención de adolescentes, adultos, adultos mayores y parejas.
+                    </p>
+                </article>
+                <article>
+                    <img src="./assets/img/signo-pregunta.png" width="100px" alt="Signo de pregunta">
+                    <h3>Turnos</h3>
+                    <p>
+                        El turno es sin lista de espera. Para más información comunicarse al (011) 46466666
+                    </p>
+                </article>
+            </div>
+        </section>
+        <!--Algunos motivos de consulta-->
+        <!---Esta parte la voy a dividir en <div> para agrupar distintas imagenes con subtítulos
+            Voy a utilizar imágenes que se encuentran en la web. Para eso voy a utilizar URL absolutas. Es otra forma de incorporar imágenes pero no es la más recomendada ya que estas imágenes pueden ser eliminadas y nos quedaría nuestra imagen "rota".
+            Lo más conveniente sería tener nuestras imágenes en nuestro directorio, así el contenido se va a cargar más rápido, nuestro contenido no depende de otra página y esto ayuda a mejorar el posicionamiento SEO en buscadores -->
+        <section id="motivosconsulta" class="motivosconsulta">
+            <h1>Algunos motivos de consulta</h1>
+            <div class="motivosconsulta_contenedor">
+            <div id="ansiedad">
+                <img src="https://img.freepik.com/vector-gratis/ilustracion-concepto-ansiedad_114360-8014.jpg?w=2000" alt="Ansiedad" width="200px">
+                <h3>Ansiedad</h3>
+            </div>
+            
+                <div id="miedo">
+                    <img  src="https://clinix.com.py/wp-content/uploads/2022/04/Diseno-sin-titulo-1024x1024-1.png"
+                        alt="Pánico, miedo" width="200px">
+                    <h3 >Pánico, miedo</h3>
+                </div>
+                <div id="angustia">
+                    <img src="https://img.freepik.com/vector-premium/ninas-o-mujeres-o-personas-infarto-personaje-dolor-pecho-angustia-expresion-dolorosa-cara-concepto-enfermedad-aislado-ilustracion-estilo-plano-dibujos-animados-salud-medicina_136070-86.jpg"
+                        alt="Angustia" width="200px">
+                    <h3>Angustia</h3>
+                </div>
+                <div id="depresion">
+                    <img src="https://us.123rf.com/450wm/sudowoodo/sudowoodo1906/sudowoodo190600046/128176272-depresión-y-tristeza-niña-con-cara-triste-bajo-la-lluvia-dibujo-de-dibujos-animados-simple-en.jpg"
+                        alt="Depresión" width="200px">
+                    <h3>Depresión</h3>
+                </div>
+                <div id="duelo">
+                    <img src="https://media.istockphoto.com/id/678260336/es/foto/cinta-de-luto-negro-aislado-en-blanco-con-sombras.jpg?s=612x612&w=0&k=20&c=TqyYMoyex9_nqnUysgVwV8qKs2XMEZfJuGNmPF0bnGI="
+                        alt="Procesos de duelo" width="200px">
+                    <h3>Procesos de duelo</h3>
+                </div>
+                <div id="alim">
+                    <img src="https://img.freepik.com/vector-premium/mujer-trastorno-alimentario-pie-junto-al-espejo_530772-102.jpg?w=2000"
+                        alt="Trastornos alimenticios" width="200px">
+                    <h3>Trastornos alimenticios</h3>
+                </div>
+                <div id="rel">
+                    <img src="https://media.istockphoto.com/id/1173286040/es/vector/una-mujer-enojada-grita-a-una-mujer-llorando-que-se-cubre-la-cara-con-las-manos.jpg?s=612x612&w=0&k=20&c=M6rSLjJ5Ci9c7B_vyfP1qGqRba5NuClwh6kIBXVLwNU="
+                        alt="Dificultades al relacionarse" width="200px">
+                    <h3>Dificultades al relacionarse</h3>
+                </div>
+                <div id="obsesiones">
+                    <img src="https://img.freepik.com/vector-gratis/ilustracion-concepto-trastorno-obsesivo-compulsivo_114360-3650.jpg?w=2000"
+                        alt="Obsesiones" width="150px">
+                    <h3>Obsesiones</h3>
+                </div>
+                <div id="somatiz">
+                    <img src="https://i.pinimg.com/originals/c1/65/01/c1650113e183e6807f2249c77c32d0c9.png"
+                        alt="Somatizaciones" width="220px">
+                    <h3>Somatizaciones</h3>
+                </div>
+                <div id="inh">
+                    <img src="https://img.freepik.com/vector-premium/carpintero-senior-pose-inhibicion-extienda-ambas-manos-frente-usted_180401-2989.jpg"
+                        alt="Inhibiciones" width="130px">
+                    <h3>Inhibiciones</h3>
+                </div>
+                <div id="enojo">
+                    <img src="https://img.freepik.com/vector-gratis/personaje-cara-emocional-enojado-mujer-mujer-negocios-doodle-personaje-dibujos-animados_40876-3212.jpg?w=2000"
+                        alt="Irritabilidad, enojo" width="200px">
+                    <h3>Irritabilidad, enojo</h3>
+                </div>
+                <div id="crisis">
+                    <img src="https://i0.wp.com/www.zeropsicologos.com/blog/wp-content/uploads/2022/12/crisis-de-la-mediana-edad-1.jpg?fit=1000%2C750&ssl=1"
+                        alt="Crisis vitales" width="230px">
+                    <h3>Crisis vitales</h3>
+                </div>
+                
+            </div>
+        </section>
+        <!---Esta sección va ser reservada para el formulario-->
+        <!-- Dentro de la etiqueta form vamos a agrupar diferentes label e imputs (campos para ingresar datos), aclarar que tipo de información queremos que ingrese el usuario, marcar los campos obligatorios y colocar un botón-->
+        <section id="contacto" class="contacto">
+            <h1>Contacto</h1>
+            <form action="/my-handling-form-page" method="post" class="contacto_form" id="form">
+                <!---El atributo "acticion" indica hacia donde queremos enviar nuestros datos
+                "method" la forma en que los vamos a enviar-->
+
+                <!---Para poder estructurar mejor el contenido y facilitar la colocación de estilos voy a ayudarme de las etiquetas <li> dentro de una lista desordenada-->
+                <ul>
+                    <!---
+                        Cada nivel del formulario se va a conformar por pares: una etiqueta "label", que índica qué dato introducir, y una etiqueta "input" que define que tipo de dato debe introducir el usuario.
+                        Cada control del formulario va a tener un nombre, importantes tanto del lado del cliente como del servidor.
+                        Los atributos en esta instancia no va a cobrar relevancia, pero posteriormente van a ser utiles a la hora de darle dinámismo a la página y enviar datos a un servidor, por eso es importante ya colocarlos de manera correcta.
+                    -->
+                    <li>
+                        <label for="name"> Nombre*</label>
+                        <input type="text" id="name" name="user_name" required>
+                    </li>
+                    <li>
+                        <label for="mail">Email*</label>
+                        <input type="email" id="mail" name="user_mail" required>
+                    </li>
+                    <li>
+                        <label for="phone">Teléfono</label>
+                        <input type="tel" id="phone" name="user_phone">
+                    </li>
+                    <li>
+                        <label for="mobile">Celular</label>
+                        <input type="tel" id="number" name="user_mobile">
+                    </li>
+                    <li>
+                        <label>Quiero recibir mensajes de Whatsapp</label>
+                        <input type="checkbox" id="cbox1" value="first_checkbox"></label>
+                    <li>
+                        <label for="">Mensaje*</label>
+                        <textarea id="msg" name="user_message" required></textarea>
+                    </li>
+                    <li class="button">
+                        <button id="myBtn" type="submit">Enviar</button>
+                        <!--El atributo type=submit envia los datos a la página web definida en el el atributo action de la etiqueta <form>-->
+                    </li>
+                </ul>
+            </form>
+        </section>
+        <!--- Esta sección es para colocar un mapa con la dirección del consultorio
+            Para esto me voy a ayudar de la etiqueta <iframe> y voy a incertar la ubicación con Google Maps
+        -->
+        <section id="ubicacion">
+            <img src="./assets/img/ubicacion.png" alt="Ícono ubicación" width="100px">
+            <div>
+                <iframe class="ubicacion_iframe"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26267.23341426023!2d-58.44584365862193!3d-34.61922513890168!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca440ec19097%3A0x30b34282ae8fae18!2sParque%20Rivadavia!5e0!3m2!1ses-419!2sar!4v1692543428563!5m2!1ses-419!2sar"
+                    width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+    </main>
+    <!--En el footer vamosa colocar información de contacto. Me voy a ayudar con divs para agrupar la información con imágenes y texto-->
+    <footer class="footer">
+        <div id="mensajes">
+            <img src="./assets/img/mensajes.png" width="50ox" alt="">
+            <span>andreamorales@morales.con.ar</span>
+        </div>
+        <div id="telefono">
+            <img src="./assets/img/telefono.png" width="50ox" alt="">
+            <span>(011) 4646-6666</span>
+        </div>
+        <div id="whatsapp">
+            <img src="./assets/img/whatsapp.png" width="50ox" alt="">
+            <span>+5471 115-665-6000</span>
+        </div>
+        <p>© 2023, by Cintia Pujol</p>
+    </footer>
+    <!--Vinvulo mi archivos js al final de mi html porque quiero cargue primero la interfaz y luego lea mi script-->
+    <script src="./js/main.js"></script>
+    <!---Vinculo por cdn mi librería js-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
